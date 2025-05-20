@@ -1,0 +1,73 @@
+.timer {
+    position: relative;
+    background-image: url("/images/countBack.png");
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 600px;
+}
+.timerSvg {
+    transform: scale(-0.85);
+    border-radius: 50%;
+}
+
+.timerCircle {
+    fill: none;
+    stroke: none;
+}
+.timerPathElapsed {
+    stroke-width: 20px;
+    stroke-linecap: round;
+}
+.timerPathRemaining {
+    transform: rotate(90deg);
+    transform-origin: center;
+    transition: 1s linear all;
+    fill-rule: nonzero;
+    stroke: currentColor;
+}
+
+.timerPathRemaining.green {
+    color: #0092FF;
+    stroke-width: 20px;
+}
+.timerPathRemaining.orange {
+    color: orange;
+    stroke-width: 20px;
+}
+.timerPathRemaining.red {
+    color: red;
+    stroke-width: 20px;
+}
+
+.timerLabel {
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Paperlogy-8ExtraBold';
+    font-size: 120px;
+    color: white;
+    width: 600px;
+    height: 600px;
+}
+
+.fadeInAnimation {
+    -webkit-animation: fadeIn 1s linear;
+    animation: fadeIn 1s linear;
+}
+
+.fadeOutAnimation {
+    -webkit-animation: fadeOut 2s linear;
+    animation: fadeOut 2s linear;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
