@@ -40,7 +40,7 @@ let startTimer = async (time) => {
   TIME_LIMIT = number;
   timeLeft = TIME_LIMIT;
   
-  document.querySelector("#timer").innerHTML = `
+  document.getElementById("timer").innerHTML = `
    <div class="timer">
 			<svg
 				class="timerSvg"
