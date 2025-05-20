@@ -30,11 +30,17 @@ let connectWebSocket = () => {
         let extras = JSON.parse(body.extras);
         
         if (profile.userRoleCode === "streamer") {
-          const command = body.msg.substring(0, body.msg.indexOf(" "));
-          const options = body.msg.substring(body.msg.indexOf(" "), body.msg.length);
+          let msg = body.msg;
+          let command;
+          let option;
+          if (msg.indexOf(" ") > 0) {
+            command = msg.substring(0, msg.indexOf(" ")).trim();
+            option = msg.substring(msg.indexOf(" "), msg.length).trim();
+          }
+          else command = msg.trim();
           switch (command) {
             case "/카운트":
-              await startTimer(options);
+              await startTimer(option);
               break;
             case "/카운트취소":
               await cancelTimer();
