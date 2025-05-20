@@ -110,8 +110,8 @@ let timeClear = () => {
 
 let drawImage = (type) => {
   let imgSrc;
-  if (type === "start") imgSrc = "/images/countStart.png";
-  if (type === "end") imgSrc = "/images/countEnd.png";
+  if (type === "start") imgSrc = "/ChzzkCount/images/countStart.png";
+  if (type === "end") imgSrc = "/ChzzkCount/images/countEnd.png";
   return `<img src="${imgSrc}" alt="${type}"/>`;
 }
 
