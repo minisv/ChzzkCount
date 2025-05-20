@@ -5,7 +5,7 @@ const sleep = async (ms) => {
 }
 
 const playSound = async (sound) => {
-  const audio = new Audio(`/ChzzkCount/sound/${sound}`);
+  const audio = new Audio(`./sound/${sound}`);
   
   audio.oncanplaythrough = async () => {
     const duration = audio.duration;
