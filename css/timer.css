@@ -1,6 +1,6 @@
 .timer {
     position: relative;
-    background-image: url("./images/countBack.png");
+    background-image: url("/ChzzkCount/images/countBack.png");
     background-repeat: no-repeat;
     width: 600px;
     height: 600px;
