@@ -20,8 +20,9 @@ Count for Chzzk
 ### chatChannelID 알아오는 방법
 - 예를 들어, https://chzzk.naver.com/769788af1e0d5fc7caeeb025504e62d8 채널주소가 이와 같다면? 76으로 시작하는 긴 값이 여러분의 채널 아이디 값이 됩니다.
 - https://api.chzzk.naver.com/polling/v2/channels/(여러분의채널아이디값)/live-status 로 접속하면 chatChannelID 뒤의 값이 나옵니다. 여러분의 채널 아이디 값을 대입하여 확인해 주세요.
-- 해당 값을 사용 방법에서 안내한 주소 처럼 ?chzzk=chatChannelID 로 셋팅 하면 됩니다.
+- 크롬창에서 보실 때의 화면에선 보기 힘들 수 있으니 "pretty print 적용" 을 체크 해 주시면 깔끔하게 보실 수 있어요.
 - 위의 값을 대입하면 저의 경우는 "chatChannelId": "N1nO-6" 로 확인이 됩니다.
+- 해당 값을 사용 방법에서 안내한 주소 처럼 ?chzzk=chatChannelID 로 셋팅 하면 됩니다.
 - 그렇다면 제가 사용해야 하는 주소는 https://minisv.github.io/ChzzkCount/?chzzk=N1nO-6 가 됩니다.
 - 방송하시는 분들 마다 채널ID 가 다 다르고, 방송의 채팅에 사용되는 chatChannelId 가 다 다르기 때문에 위의 과정을 꼭 거쳐주셔야 합니다.
 - 19금 방송의 경우 chatChannelId 를 알아온다고 해도 네이버에 인증값을 넘기지 않으면 채팅을 가져올 수 없습니다.
