@@ -1,7 +1,7 @@
 # ChzzkCount
 Count for Chzzk
 
-![end](./images/countEnd.png)
+![sample](./sample/sample.png)
 
 ### 개발 목적
 - 이 프로그램은 치지직 방송 하시는 분들을 위해 공개한 오픈 프로젝트 입니다.
